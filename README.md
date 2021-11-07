@@ -12,8 +12,25 @@ In order to compare the stock performance between 2017 and 2018:
   - The subroutine also included special formatting to display positive annual stock returns in green and negative annual stock returns in red. This allows the user to very quickly determine which stocks had better annual outcomes.
 - I then created a new subroutine to allow the user to select between 2017 and 2018 stock data by allowing them to input the year. I created a button in the **All Stocks Analysis** worksheet to allow a user to easily execute this new subroutine. 
 - Now that stock data can easily be generated for both 2017 and 2018, we can compare the results.
-  - Results from 2017 ![Play Outcomes by Goal](/Outcomes_vs_Goals_datalabels.png)  
-- I created a button on the a button called in the **All Stocks Analysis** tab   of the [VBA Challenge spreadsheet](/VBA_Challenge.xlsm). When this button is clicked would automatically calculate the roll-up, apply the values to the current worksheet and     display positive returns in green and negative ones in red, to make the data more visually appealing and easy to understand.
+  - Results from 2017 ![2017 Stock Analysis](/VBA_Challenge_2017.png)  
+  - Observations of 2017 data include:
+    - 11 of the 12 stocks had postive annual returns
+    - 2 of the 11 postive stocks saw single digit returns
+    - 5 of the 11 postive stocks saw double digit returns
+    - 4 of the 11 postive stocks saw triple digit returns
+  - Results from 2018 ![2018 Stock Analysis](/VBA_Challenge_2018.png)  
+  - Observations of 2018 data include:
+    - Only 2 of the 12 stocks had postive annual returns, 10 had negative annual returns
+    - 2 of the 11 postive stocks saw single digit returns
+    - 5 of the 11 postive stocks saw double digit returns
+    - 4 of the 11 postive stocks saw triple digit returns
+  - Comparisons of 2017 and 2018 data
+    - Stock tickers ENPH and RUN were the only 2 stocks that saw positive returns in both years
+    - ENPH had a triple digit return in 2017 and a double digit return in 2018
+    - RUN had a single digit return in 2017 and a double digit return in 2018
+  - Recommendation
+    - Based on analysis, I'd recommend to my client Steve that his parents consider investing in ENPH and RUN stocks
+    
 #### Comparing Execution Times Between Original & Refactored Code
 
 ### Summary
