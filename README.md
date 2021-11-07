@@ -2,13 +2,20 @@
 
 ## Overview of Project
 ### Purpose
-The purpose of this project is to empoyer clients to automatically calculate total number of shares traded and annual returns for selected stock data in 2017 and 2018. With this data, clients can analyze the results to determine how certains stocks did each year. Additionally, the project involves reviewing and refactoring the code used for automation, to determine if refactoring it makes its execution faster.  If the refactored code runs faster, it can prove beneficial for processing large volumes of stock data. 
+The purpose of this project is to empoyer my client, Steve, to automatically calculate total number of shares traded and annual returns for selected stock data in 2017 and 2018. With this data, Steve can help his parents analyze the results to determine how certains stocks did each year and if there are any changes they want to make in their stock portfolio. 
+
+Additionally, the project involves reviewing and refactoring the code used for automation, in hopes for efficiency gains. For example, if the refactored code runs faster, it will be more appealing to use it to process large volumes of stock data. This would be a huge benefit for Steve, allowing him to expand his analysis to the entire stock market for any year.
 ### Results
-- Stock Performance Between 2017 - 2018
-  In order to compare the stock performance between 2017 and 2018, I first had to roll-up the raw stock data for each year. I created a button in the **All Stocks Analysis** tab   of the [VBA Challenge spreadsheet](/VBA_Challenge.xlsm). When this button is clicked would automatically calculate the roll-up, apply the values to the current worksheet and     display positive returns in green and negative ones in red, to make the data more visually appealing and easy to understand.
-  - 
-- Comparing Execution Times Between Original & Refactored Code
-#### Run Times 
+#### Stock Performance Between 2017 - 2018
+In order to compare the stock performance between 2017 and 2018:
+- I first had to roll-up the raw stock data for each year. I created a subroutine to loop through the 2018 data for each of the 12 stock "tickers" and output each ticker's total volume and annual return to the **All Stocks Analysis** worksheet of the [VBA Challenge spreadsheet](/VBA_Challenge.xlsm).
+  - The subroutine also included special formatting to display positive annual stock returns in green and negative annual stock returns in red. This allows the user to very quickly determine which stocks had better annual outcomes.
+- I then created a new subroutine to allow the user to select between 2017 and 2018 stock data by allowing them to input the year. I created a button in the **All Stocks Analysis** worksheet to allow a user to easily execute this new subroutine. 
+- Now that stock data can easily be generated for both 2017 and 2018, we can compare the results.
+  - Results from 2017 ![Play Outcomes by Goal](/Outcomes_vs_Goals_datalabels.png)  
+- I created a button on the a button called in the **All Stocks Analysis** tab   of the [VBA Challenge spreadsheet](/VBA_Challenge.xlsm). When this button is clicked would automatically calculate the roll-up, apply the values to the current worksheet and     display positive returns in green and negative ones in red, to make the data more visually appealing and easy to understand.
+#### Comparing Execution Times Between Original & Refactored Code
+
 ### Summary
 - What are the advantages or disadvantages of refactoring code?
   - Advantages include:
@@ -23,14 +30,4 @@ The purpose of this project is to empoyer clients to automatically calculate tot
 - How do these pros and cons apply to refactoring the original VBA script?
   - 
 
-### Analysis of Outcomes Based on Launch Date
-- In order to analyze fundraising campaign outcomes by launch date, I created a pivot table to organize and dynamically filter the data.  The pivot table can be viewed in the **Theater Outcomes by Launch Date tab** in the [Kickstarter Challenge Deliverables spreadsheet](/Kickstarter_Challenge_Deliverables.xlsx)
-- My observations included:
-  - Even though there was data between 2009 and 2017, the majority was within years 2014, 2015 and 2016.
-  - The data for 2017 didn't include a full year of data, ending in mid-March 2017.
-  - When looking at the data across all years versus the years 2014 through 2016, the outcomes were not significantly different. Therefore, I used all the years of data in my 
-
-### Analysis of Outcomes Based on Goals
- The table can be viewed in the **Outcomes Based on Goals tab** in the [Kickstarter Challenge Deliverables spreadsheet](/Kickstarter_Challenge_Deliverables.xlsx)
-  - From the new table, I created a line graph to visualize the percentage of each outcome (successful, failed and canceled) for each goal: ![Play Outcomes by Goal](/Outcomes_vs_Goals_datalabels.png)  
 
